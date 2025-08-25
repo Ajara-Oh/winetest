@@ -1,0 +1,14 @@
+{
+  "name": "Linux Desktop with Wine",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+
+  "postCreateCommand": "bash .devcontainer/setup-desktop.sh",
+
+  "forwardPorts": [6080],
+
+  "customizations": {
+    "vscode": {
+      "settings": {}
+    }
+  }
+}
